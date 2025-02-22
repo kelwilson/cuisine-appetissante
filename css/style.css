@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root {
+  --white: #fff;
+  --orange: rgb(255, 115, 0);
+}
+
+body {
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+main {
+  background-image: url(/img/ginger-guy.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  height: 800px;
+  padding-top: 20px;
+}
+
+header {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.logo {
+
+  font-family: "Croissant One", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 10%;
+  margin: 1% 5%;
+  font-size: 1.2em;
+  text-align: center;
+  color: #645a00;
+  position: relative;
+  
+}
+
+.logo::before,
+.logo::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  background: linear-gradient( to right, #F0E68C, #645a00);
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.logo::before{
+  top: -5px;
+  transform-origin: left;
+}
+
+.logo:hover::after,
+.logo:hover::before {
+transform: scaleX(1);
+}
+
+.nav-bar{
+  width: 70%;
+  margin-left: auto;
+  /* justify-items: end; */
+}
+
+.nav-bar ul {
+display: flex;
+}
+
+.nav-bar li {
+  flex: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f79400;
+  text-align: center;
+  transition: transform 0.2s ease-out;
+}
+
+.nav-bar li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0.5px;
+  background: linear-gradient( to right, #f19f81, #ff4500);
+  left: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-out;
+  margin: 0 3px;
+}
+
+.nav-bar li:hover::after {
+transform: scaleX(1);
+}
+
+.nav-bar li:hover:not(.fm, .cart ) {
+  /* font-size: 1.3em; */
+  /* font-weight: 900; */
+  /* text-decoration: underline; */
+  color: #ff4500;
+  transform: scale(1.05);
+}
+
+.cart img {
+  width: 25%;
+  height: 25px;
+
+}
+
+.hamburger {
+  display: none;
+}
+
+/********************   hero-section   **********************/
+
+.hero {
+  /* clear: both; */
+  padding: 5%;
+}
+
+.hero h1 {
+  font-size: 5em;
+  width: 35%;
+}
+
+.hero form {
+  margin: 0;
+  display: flex;
+}
+
+.hero input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: var(--white);
+  border-inline: none;
+  border: none;
+  padding: 1%;
+  margin: 0;
+  width: 35%;
+}
+
+.hero a,
+.about-section a {
+  /* float: left; */
+  background: var(--orange);
+  padding: 1%;
+  margin: 0;
+  text-decoration: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: var(--white);
+  font-size: 1.1em;
+}
+
+.hero ul {
+  /* clear: both; */
+  display: flex;
+}
+
+.hero li {
+  /* float: left; */
+  padding: 3%;
+}
+
+/********************    about-section   **********************/
+
+.about-section {
+  background-image: url(/img/second-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  margin-top: 2px;
+  display: flex;
+}
+
+.about-section div {
+  /* float: right; */
+  width: 50%;
+  padding: 5%;
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+.about-section span,
+.order-section span,
+.bookings-section .span,
+footer.testimonial .test-span {
+  color: var(--orange);
+  font-size: 1.3em;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.2s ease-out;
+}
+
+.about-section span:hover,
+.order-section span:hover,
+.bookings-section .span:hover,
+footer.testimonial .test-span:hover {
+  color: #ff4500;
+  transform: scale(1.05);
+  font-size: 1.4em;
+}
+
+.about-section span::after,
+.order-section span::after,
+.bookings-section .span::after,
+footer.testimonial .test-span::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background: linear-gradient( to right, #f19f81, #ff4500);
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-out;
+  margin: 0 3px;
+}
+
+.about-section span:hover::after,
+.order-section span:hover::after,
+.bookings-section .span:hover::after,
+footer.testimonial .test-span:hover::after{ 
+  transform: scaleX(1);
+}
+
+.about-section h2 {
+  font-size: 3.5em;
+  width: 65%;
+}
+
+
+.about-section p {
+  font-size: 1.2em;
+}
+
+.about-section p + p {
+  margin-bottom: 7%;
+}
+
+.about-section a {
+  padding: 2%;
+  border-radius: 5px;
+}
+
+/********************    order-section   **********************/
+
+.order-section {
+  background-image: url(/Cuisine_Solution/img/try-2nd.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 1200px;
+  text-align: center;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .order-section div {
+   margin: 0 auto;
+  width: 100%; 
+} */
+
+.order-section h3,
+.bookings-section h3,
+.testimonial h2 {
+  font-size: 5em;
+  margin: 3% 0;
+}
+
+.order-ul {
+  padding: 0 27%;
+  display: flex;
+}
+
+.order-ul > li {
+  /* float: left; */
+  margin: 4%;
+  font-size: 1.5em;
+}
+
+.order-img-ul {
+  /* clear: both; */
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.order-img-ul img {
+  width: 250px;
+  height: 300px;
+  /* float: left; */
+  /* margin: 2%; */
+  /* margin-left: 3%; */
+  margin:.5em .25em;
+  object-fit: contain;
+  flex: auto 0 1;
+}
+
+/********************    bookings-section   **********************/
+
+.bookings-section {
+  /* clear: both; */
+  background-image: url(/Cuisine_Solution/img/strawberry.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1100px;
+  text-align: center;
+  padding: 7%;
+}
+
+.bookings-section h3 + strong + span {
+  display: block;
+  color: #000;
+}
+
+.bookings-section h4 {
+  font-size: 2em;
+  color: var(--orange);
+  margin: 0;
+}
+
+.bookings-section ul {
+  padding: 0 10%;
+  margin: 2% 3% 9%;
+  /* margin-bottom: 9%; */
+}
+
+.bookings-section li {
+  /* float: left; */
+}
+
+.bookings-section li:last-of-type {
+  /* float: right; */
+}
+
+.bookings-section li span {
+  font-size: 1.2em;
+  color: #000;
+}
+
+.bookings-section li strong {
+ font-size: 1.5em;
+ font-weight: bolder;
+}
+
+.bookings-section .img-div {
+  clear: both;
+  margin: 5%;
+}
+
+.bookings-section .img-div img {
+  width: 100%;
+  height: 450px;
+}
+
+
+
+/********************    testimonial-section   **********************/
+
+/* footer {
+} */
+
+.testimonial {
+  background: var(--white);
+  height: 800px;
+  text-align: center;
+  padding: 7%;
+
+}
+
+
+.testimonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.testimonial i {
+  display: block;
+  margin: 2%;
+  color: var(--orange);
+}
+
+.testimonial p {
+  width: 50%;
+  margin: 3% auto;
+}
+
+.testimonial a {
+  text-decoration: none;
+  display: block;
+  color: var(--orange);
+}
+
+.hidden {
+  display: none;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES @media
+/*******************************************/
+
+
+/******************* media-mobile************************/
+
+@media sreen and (max-width: 600px) {
+
+  main {
+    background-image: url(/Cuisine_Solution/mobile-img/ginger-guy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .nav-bar {
+    float: left;
+    width: 40%;
+    text-align: center;
+  }
+
+  .nav-bar .cart {
+    /* display: block; */
+    width: 100px;
+    /* height: 400px; */
+  }
+
+  #hamburger {
+    float: right;
+    width: 30%;
+    padding-left: 50px;
+  }
+
+  #hamburger span{
+    display: block;
+    width: 10%;
+    height: 10px;
+    margin: 1%;
+    background: var(--orange);
+  }
+
+ /******************* hero-section************************/
+
+ .hero {
+  width: 100%;
+  /* padding: 1%; */
+  text-align: center;
+  /* font-size: 10px; */
+ }
+
+ .hero h1 {
+  width: 70%;
+  font-size: 3em;
+  margin: 20px auto;
+ }
+
+ .hero form {
+  margin: 0 auto;
+  width: 100%;
+ }
+
+ .hero input {
+  margin: 0 auto;
+  float: none;
+ }
+
+ .hero a {
+  float: none;
+ }
+
+ .hero ul {
+  text-align: center;
+  margin-left: 30px;
+ }
+
+ .hero li {
+  /* float: none; */
+  
+ }
+
+}
