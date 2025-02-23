@@ -250,6 +250,10 @@ color: #000000;
   color: #9f995e;
   /* color: #474100; */
 }
+.about-section h2:hover {
+  color: #0a0a04;
+  /* color: #474100; */
+}
 
 .about-section span,
 .order-section span,
