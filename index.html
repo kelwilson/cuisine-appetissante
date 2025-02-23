@@ -6,9 +6,10 @@
     <meta name="keywords" content="one, two, three" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Blank Template</title>
+    <title>CUISINE APPETISSANTE</title>
 
     <!-- external CSS link -->
+    <script src="https://kit.fontawesome.com/08f89b8954.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -18,12 +19,12 @@
         <span class="logo"><strong>CUISINE <br> APPETISSANTE</strong></span>
         <nav class="nav-bar">
           <ul>
-            <li class="">Home</li>
-            <li class="">About us</li>
-            <li class="">Menu</li>
-            <li class="">Oder now</li>
-            <li class="">Blog</li>
-            <li class="">Location</li>
+            <li class=""><a href="#home">Home</a> </li>
+            <li class=""><a href="#about"> About us</a></li>
+            <li class=""><a href="#menu">Menu</a> </li>
+            <li class=""><a href="#order">Oder now</a> </li>
+            <li class=""><a href="#">Blog</a> </li>
+            <li class=""><a href="#">Location</a> </li>
             <li class="cart">
               <img src="./img/shopping-cart.png" alt="" />
             </li>
@@ -60,7 +61,7 @@
         </div>
       </header>
 
-      <div class="hero">
+      <div class="hero" id="home">
         <h1>Welcome To Our Cuisine Restuarant</h1>
         <form action="">
           <input type="text" name="search" placeholder="search here" />
@@ -68,13 +69,14 @@
         </form>
 
         <ul>
-          <li>icons</li>
-          <li>icons</li>
-          <li>icons</li>
+          <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a> </li>
+          <li><a class="insta" href="#"><i class="fa-brands fa-instagram"></i></a> </li>
+          <li><a class="x" href="#"><i class="fa-brands fa-x-twitter"></i></a> </li>
         </ul>
       </div>
     </main>
-    <section class="about-section">
+    <div class="just-for-styling"></div>
+    <section class="about-section" id="about">
       <div>
         <span>About Us</span>
         <h2>Discover our Restuarant story</h2>
@@ -95,7 +97,7 @@
       </div>
     </section>
 
-    <section class="order-section">
+    <section class="order-section" id="menu">
       <div>
         <span>Order Online Now</span>
         <h3>Our Specility Cuisine</h3>
@@ -108,24 +110,53 @@
         </ul>
 
         <ul class="order-img-ul">
-          <li><img src="./img/assorted.jpg" alt="order-img" /></li>
-          <li><img src="./img/eggs.jpg" alt="order-img" /></li>
-          <li><img src="./img/pasta.jpg" alt="order-img" /></li>
-          <li><img src="./img/salad.jpg" alt="order-img" /></li>
-          <li><img src="./img/tea.jpg" alt="order-img" /></li>
-          <li><img src="./img/burger.jpg" alt="order-img" /></li>
-          <li><img src="./img/fruits.jpg" alt="order-img" /></li>
-          <li><img src="./img/fried-salmon-steak.webp" alt="order-img" /></li>
-          <li><img src="./img/fruits tray.jpg" alt="order-img" /></li>
+          <li>
+            <img class="img1" src="./img/assorted.jpg" alt="order-img" />
+            <img class="img2" src="./img/Hotel-chiba-Restaurant-Christmas-Dinner.jpg" alt="order-img">
+
+          </li>
+          <li>
+            <img class="img1" src="./img/eggs.jpg" alt="order-img" />
+            <img class="img2" src="./img/assort.jpg" alt="order-img">
+          </li>
+          <li>
+            <img class="img1" src="./img/pasta.jpg" alt="order-img" />
+            <img class="img2" src="./img/chili-garlic-noodles-blog.jpg" alt="order-img" />
+
+          </li>
+          <li>
+            <img class="img1" src="./img/salad.jpg" alt="order-img" />
+            <img class="img2" src="./img/fries.jpg" alt="order-img">
+          </li>
+          <li>
+            <img class="img1" src="./img/tea.jpg" alt="order-img" />
+            <img class="img2" src="./img/dish plat.jpg" alt="order-img">
+          </li>
+          <li>
+            <img class="img1" src="./img/burger.jpg" alt="order-img" />
+            <img class="img2" src="./img/MSG-Smash-Burger.jpg" alt="order-img">
+          </li>
+          <li>
+            <img class="img1" src="./img/fruits.jpg" alt="order-img" />
+            <img class="img2" src="./img/shawarma-plate-meat-.webp" alt="order-img">
+          </li>
+          <li>
+            <img class="img1" src="./img/fried-salmon-steak.webp" alt="order-img" />
+            <img class="img2" src="./img/slate-plate-grilled-salmon-steaks-vegetables-black-wooden-table-top-view-grilled-salmon-steaks-107738606.webp" alt="order-img">
+          </li>
+          <li>
+            <img class="img1" src="./img/fruits tray.jpg" alt="order-img" />
+            <img class="img2" src="./img/Broiled-Salmon-with-Summer-Fruit-Salad-2-1.jpg" alt="order-img" />
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="bookings-section">
+    <section class="bookings-section" id="order">
       <span class="span">Book Table</span>
       <h3>Opening Hours</h3>
-      <strong>call-icon</strong>
-      <span>call </span>
+      <strong><i class="fa-solid fa-phone-volume call"></i> &nbsp;&nbsp;<span>Call </span></strong>
+      
 
       <h4><strong>+1234567980</strong></h4>
 
