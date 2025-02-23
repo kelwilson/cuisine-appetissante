@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
 /* Clear fix hack */
@@ -98,13 +99,16 @@ transform: scaleX(1);
 display: flex;
 }
 
-.nav-bar li {
+.nav-bar li  {
   flex: 1;
   font-size: 1.2em;
   font-weight: bold;
   color: #f79400;
   text-align: center;
   transition: transform 0.2s ease-out;
+}
+.nav-bar li a{
+  color: #f79400;
 }
 
 .nav-bar li::after {
@@ -173,7 +177,7 @@ transform: scaleX(1);
   width: 35%;
 }
 
-.hero a,
+.hero form a,
 .about-section a {
   /* float: left; */
   background: var(--orange);
@@ -196,6 +200,33 @@ transform: scaleX(1);
   padding: 3%;
 }
 
+/********** just- styling ***********/
+
+.just-for-styling {
+  height: 5px;
+
+  background: rgb(141 137 137 / 49%);
+}
+
+.fa-brands {
+  font-size: 1.8em;
+}
+
+.facebook {
+color:  #1877F2 ;
+}
+.insta {
+color: #FCAF45;
+}
+
+.x {
+color: #000000;
+}
+
+.call {
+  color: brown;
+}
+
 /********************    about-section   **********************/
 
 .about-section {
@@ -203,7 +234,7 @@ transform: scaleX(1);
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
-  margin-top: 2px;
+  /* margin-top: 2px; */
   display: flex;
 }
 
@@ -296,11 +327,6 @@ footer.testimonial .test-span:hover::after{
   flex-direction: column;
 }
 
-/* .order-section div {
-   margin: 0 auto;
-  width: 100%; 
-} */
-
 .order-section h3,
 .bookings-section h3,
 .testimonial h2 {
@@ -313,6 +339,7 @@ footer.testimonial .test-span:hover::after{
 .order-ul {
   padding: 0 27%;
   display: flex;
+  margin-bottom: 5%;
 }
 
 .order-ul > li {
@@ -348,29 +375,63 @@ footer.testimonial .test-span:hover::after{
 }
 
 .order-img-ul {
-  /* clear: both; */
+  /* clear: both;*/
   display: flex;
-  gap: 5px;
-  justify-content: space-evenly;
+  justify-content: center; 
   flex-wrap: wrap;
-  padding: 0;
+  gap: 8px;
+   padding: 0;
 }
 
-.order-img-ul img {
-  width: 250px;
-  height: 300px;
+.order-img-ul > li {
+  height: 230px;
+  width: 25%;
   /* float: left; */
-  /* margin: 2%; */
-  /* margin-left: 3%; */
-  margin:.5em .25em;
+  overflow: hidden;
+  position: relative;
+ margin-right: 6px;
+ margin-bottom: 3px;
+}
+
+.img1 {
+  position: absolute;
+  z-index: 2;
+  transition: .4s;
+  transform-origin: 50%, 50%;
   object-fit: contain;
-  flex: auto 0 1;
+  width: 270px;
+  height: 300px; 
+  
+ 
+}
+
+.img2 {
+  filter: blur(20px);
+  transform: scale(1.1s);
+  opacity: 1;
+  transition: 4s;
+  /* width: 70%; */
+  object-fit: contain;
+  width: 270px;
+  height: 300px; 
+}
+
+.order-img-ul > li:hover .img1 {
+  filter: blur(20px);
+  transform: scale(1.1s);
+  opacity: 0;
+}
+
+.order-img-ul > li:hover .img2 {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
 }
 
 /********************    bookings-section   **********************/
 
 .bookings-section {
-  /* clear: both; */
+  clear: both;
   background-image: url(/Cuisine_Solution/img/strawberry.jpg);
   background-size: cover;
   background-repeat: no-repeat;
