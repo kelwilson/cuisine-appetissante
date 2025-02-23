@@ -159,6 +159,12 @@ transform: scaleX(1);
   width: 35%;
   color: #6b6631;
   /* color: #272402; */
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero h1:hover {
+  color: #0a0a04;
+  transform: scale(1.05)
 }
 
 .hero form {
