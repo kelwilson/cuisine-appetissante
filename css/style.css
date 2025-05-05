@@ -443,7 +443,7 @@ footer.testimonial .test-span:hover::after{
 /********************    bookings-section   **********************/
 
 .bookings-section {
-  clear: both;
+  /* clear: both; */
   background-image: url(/Cuisine_Solution/img/strawberry.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -466,6 +466,10 @@ footer.testimonial .test-span:hover::after{
 .bookings-section ul {
   padding: 0 10%;
   margin: 2% 3% 9%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   /* margin-bottom: 9%; */
 }
 
@@ -626,7 +630,7 @@ footer.testimonial .test-span:hover::after{
   /********************    order-section   **********************/
 
   .order-section {
-    height: 700px;
+    height: 1000px;
   }
 
   .order-section h3,
@@ -658,6 +662,23 @@ footer.testimonial .test-span:hover::after{
     height: 250px;
   }
 
+  .bookings-section {
+    height: 850px;
+  }
+
+
+  .bookings-section h4 {
+    font-size: 1.1em;
+  }
+
+  .bookings-section li span {
+    font-size: 0.8em;
+  }
+
+  .bookings-section > strong {
+    display: block;
+    margin-bottom: 5px;
+  }
   /* .img2 {
 
   } */
@@ -666,10 +687,72 @@ footer.testimonial .test-span:hover::after{
 
 /******************* media-mobile************************/
 
-@media (max-width: 640px) {
-  .your-class {
-    /* mobile styles here */
-    font-size: 14px;
-    padding: 1rem;
+/* mobile styles here */
+@media (max-width: 760px) {
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: #fff;
   }
+
+  .nav-bar {
+    display: none;
+  }
+
+  #hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #hamburger span {
+    display: block;
+    background: #000;
+    width: 2em;
+    height: 10%;
+    margin: 3px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .hero h1 {
+    font-size: 3em;
+    /* padding: 1rem;  */
+    margin-top: 150px;
+    text-align: center;
+    word-wrap: break-word;
+    width: 100%;
+  }
+  
+  .hero form {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+  }
+
+
+  .hero input {
+    width: 15em;
+    padding: 5%;
+  }
+
+  .hero form a {
+    padding: 5%;
+  }
+
+  .socials {
+      margin-top: 50px;
+      justify-content: space-around;
+      width: 60%;
+  }
+
+
 }
