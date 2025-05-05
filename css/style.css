@@ -213,7 +213,6 @@ transform: scaleX(1);
 
 .just-for-styling {
   height: 5px;
-
   background: rgb(141 137 137 / 49%);
 }
 
@@ -549,18 +548,24 @@ footer.testimonial .test-span:hover::after{
 
 @media (min-width: 768px) and (max-width: 1035px) {
 
-  main {
+  main, 
+  .about-section {
     height: 600px;
   }
 
   .logo {
-    font-size: 1em;
+    font-size: 0.8em;
     /* width: 7%; */
   }
 
+  .logo::before {
+    top: -6px;
+  }
+  
   .logo::before,
-.logo::after {
+  .logo::after {
     left: 5px;
+    bottom: 3px;
 }
 
   .nav-bar li  {
@@ -569,6 +574,9 @@ footer.testimonial .test-span:hover::after{
 
   .cart img {
     height: 16px;
+  }
+  .hero {
+    margin-top: 35px;
   }
 
   .hero h1 {
@@ -580,6 +588,79 @@ footer.testimonial .test-span:hover::after{
   .fa-brands {
     font-size: 1em;
   }
+
+  .hero ul {
+    margin-top: 30px;
+  }
+
+  .hero form a, 
+  .about-section a {
+    font-size: 0.9em;
+  }
+
+  .about-section p + p {
+    margin-bottom: 15%;
+  }
+
+
+  /********  About section   ********/
+
+
+
+  .about-section h2 {
+    width: 100%;
+    font-size: 2.6em;
+  }
+
+  .about-section p {
+    font-size: 1em;
+  }
+
+  .about-section span,
+  .order-section span,
+  .bookings-section .span,
+  footer.testimonial .test-span {
+    font-size: 1em;
+  }
+
+  /********************    order-section   **********************/
+
+  .order-section {
+    height: 700px;
+  }
+
+  .order-section h3,
+  .bookings-section h3,
+  .testimonial h2 {
+    font-size: 2.6em;
+}
+
+  .order-ul {
+    padding: 0 7%;
+    justify-content: center;
+  }
+
+  .order-ul li {
+    font-size: 1em;
+  }
+
+  .order-img-ul {
+    gap: 10px;
+  }
+
+  .order-img-ul li {
+
+  }
+  
+  .img1,
+  .img2 {
+    width: 220px;
+    height: 250px;
+  }
+
+  /* .img2 {
+
+  } */
 }
 
 
