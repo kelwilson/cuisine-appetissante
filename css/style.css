@@ -754,5 +754,33 @@ footer.testimonial .test-span:hover::after{
       width: 60%;
   }
 
+  /********************    about-section   **********************/
 
+  .about-section {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section div {
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7%;
+  }
+
+  .about-section h2 {
+    font-size: 3em;
+    width: 70%;
+    word-break: break-word;
+  }
+
+  .about-section p {
+    background: beige;
+    filter: alpha(opacity=50); 
+    opacity: 0.5;
+  }
 }
