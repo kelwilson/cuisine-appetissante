@@ -258,6 +258,8 @@ color: #000000;
   color: #9f995e;
   /* color: #474100; */
 }
+
+
 .about-section h2:hover {
   color: #0a0a04;
   /* color: #474100; */
@@ -730,6 +732,7 @@ footer.testimonial .test-span:hover::after{
     text-align: center;
     word-wrap: break-word;
     width: 100%;
+    color: #ed006b;
   }
   
   .hero form {
@@ -763,6 +766,11 @@ footer.testimonial .test-span:hover::after{
     text-align: center;
   }
 
+  .about-section span {
+    margin-top: 30px;
+    font-size: 1.7em;
+  }
+
   .about-section div {
     margin: 0;
     width: auto;
@@ -776,11 +784,39 @@ footer.testimonial .test-span:hover::after{
     font-size: 3em;
     width: 70%;
     word-break: break-word;
+    color: #ed006b;
   }
+  
+  .about-section h2:hover,
+  .hero h1:hover {
+  color: #fc2809e5;
+  /* color: #474100; */
+}
 
   .about-section p {
     background: beige;
-    filter: alpha(opacity=50); 
-    opacity: 0.5;
+    /* filter: alpha(opacity=50); 
+    opacity: 0.5; */
   }
+
+  /********************    order-section   **********************/
+  .order-section h3,
+.bookings-section h3,
+.testimonial h2 {
+  font-size: 3em;
+  margin: 3% 0;
+  color: #9f995e;
+  /* color: #6b6631; */
+}
+
+.order-ul {
+  padding: auto;
+  margin: 0;
+  flex-direction: column;
+}
+
+.order-img-ul {
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
 }
