@@ -819,16 +819,44 @@ footer.testimonial .test-span:hover::after{
   display: none;
 }
 
-.mobile-img-div {
+.mobile-slider {
   display: flex;
+  /* flex-direction: column; */
+  width: max-content;
 }
 
 .mobile-img-ul {
   display: flex;
+  flex-direction: column;
 }
 
 .mobile-img-ul-two {
   display: flex;
 }
+ 
+/* .swiper {
+  height: 500px;
+   width: 50%; 
+}
 
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.swiper img {
+  width: 400px;
+  height: 400px; 
+} */
+
+.img2 {
+  filter: none;
+}
+
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+}
 }
