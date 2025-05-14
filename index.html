@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/08f89b8954.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <main>
@@ -146,23 +147,69 @@
           <li>Shake</li>
         </ul>
 
-        <div class="mobile-img-div hidden">
+        
+        <!-- Swiper -->
+        <!-- <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="img1" src="./img/assorted.jpg" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/eggs.jpg" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/pasta.jpg" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/salad.jpg" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/tea.jpg" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/burger.jpg" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/fruits.jpg" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/fried-salmon-steak.webp" alt="order-img" />
+            </div>
+            
+            <div class="swiper-slide">
+              <img class="img1" src="./img/fruits tray.jpg" alt="order-img" />
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+        
+        <div class="mobile-slider hidden">
 
           <ul class="mobile-img-ul">
-            
+
                 <li>
                   <img class="img1" src="./img/assorted.jpg" alt="order-img" />
                 </li>
 
                 <li>
                   <img class="img1" src="./img/eggs.jpg" alt="order-img" />
-                </li>
+                </li> 
 
                 <li>
                   <img class="img1" src="./img/pasta.jpg" alt="order-img" />
-                </li>
+                </li> 
 
-                <li>
+                 <li>
                   <img class="img1" src="./img/salad.jpg" alt="order-img" />
                 </li>
 
@@ -172,9 +219,9 @@
 
                 <li>
                   <img class="img1" src="./img/burger.jpg" alt="order-img" />
-                </li>
+                </li> 
 
-                <li>
+                 <li>
                   <img class="img1" src="./img/fruits.jpg" alt="order-img" />
                 </li>
 
@@ -188,7 +235,7 @@
 
           </ul>
 
-          <ul class="mobile-img-ul-two">
+          <!-- <ul class="mobile-img-ul-two">
                 <li>
                   <img class="img2" src="./img/Hotel-chiba-Restaurant-Christmas-Dinner.jpg" alt="order-img">
                 </li>
@@ -224,7 +271,7 @@
                 <li>
                   <img class="img2" src="./img/Broiled-Salmon-with-Summer-Fruit-Salad-2-1.jpg" alt="order-img" />
                 </li>
-          </ul>
+          </ul> -->
 
         </div>
 
@@ -316,5 +363,23 @@
       <p>Copyright © 2024 CusineAppetissante</p>
     </footer>
     <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
   </body>
 </html>
