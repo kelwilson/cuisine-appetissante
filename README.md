@@ -2,7 +2,7 @@
 
 **CUISINE-APPETISSANTE**
 
-[<img src="./img/cuisine-appetissante.png" width="50%">]
+<img src="./img/cuisine-appetissante.png" width="100%">
 
 ## Project Description
 
